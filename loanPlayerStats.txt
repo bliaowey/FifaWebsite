@@ -1,0 +1,54 @@
+Max Jacobs: (img 1917)
+<tr>
+  <td>2022-23</td>
+  <td>26</td>
+  <td>1</td>
+  <td>2</td>
+  <td>8</td>
+</tr>
+<tr>
+  <td>2023-24</td>
+  <td>32</td>
+  <td>0</td>
+  <td>1</td>
+  <td>7</td>
+</tr>
+<tr>
+  <td>2024-25</td>
+  <td>18</td>
+  <td>1</td>
+  <td>1</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>2025-26</td>
+  <td>22</td>
+  <td>1</td>
+  <td>1</td>
+  <td>6</td>
+</tr>
+<tr>
+  <td>2026-27</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+</tr>
+
+Dominico Barbieri (imag 2008):
+<tr>
+  <td>2025-26</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+</tr>
+
+Mauro Sanna:
+5 played
+
+Brandon Barnes:
+3 played, 1 goal
+
+Brandon Gray:
+1 played

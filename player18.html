@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Yeet">
+  <title>Alvaro Morata</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <body style="background-color: blue;">
+    <header>
+    <div>
+      <h1><a href="index.html">Brandeis FC</a></h1>
+    </div>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html"><h4><b>Home</b></h4></a></li>
+          <li><a href="about.html"><h4><b>About</b></h4></a></li>
+          <li><a href="firstTeam.html"><h4><b>First Team</b></h4></a></li>
+          <li><a href="coachingStaff.html"><h4><b>Coaching Staff</b></h4></a></li>
+          <li><a href="pastTeams.html"><h4><b>Past Teams</b></h4></a></li>
+        </ul>
+    </div>
+    </nav>
+    <div style="text-align: center">
+      <a href="firstTeam.html"><h4><b>Back to First Team</b></h4></a>
+    </div>
+  </header>
+  <body style="flex: 1; flex-direction: column">
+    <div>
+      <h1 style="text-align: left"><b>#18 Alvaro Morata</b></h1>
+      <img width="300" height="400"src="https://www.footballdatabase.eu/images/photos/players/a_111/111289.jpg">
+      <ul style="display: inline-block">
+        <li style="list-style: none; color: white"> Position: Striker</li>
+        <li style="list-style: none; color: white"> Height: 6'3</li>
+        <li style="list-style: none; color: white"> Age: 35</li>
+        <li style="list-style: none; color: white"> Country: Spain</li>
+      </ul>
+      <table style="display: inline-block;">
+        <tr>
+          <th>Year</th>
+          <th>Games Played</th>
+          <th>Goals Scored</th>
+          <th>Assists</th>
+          <th>Clean Sheets</th>
+        </tr>
+        <tr>
+          <td>2027-28</td>
+          <td>28</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td id = "totalGames"></td>
+          <td id = "totalGoals"></td>
+          <td id = "totalAssists"></td>
+          <td id = "totalCleanSheets"></td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      const gms = [28];
+      const gls = [7];
+      const ast = [7];
+      const cs = [6];
+
+      let i;
+      function getTotal(stat){
+        let total = 0;
+        for(i = 0; i < stat.length; i++){
+          total += stat[i];
+        }
+        return total;
+      }
+
+      document.getElementById("totalGames").innerHTML = getTotal(gms);
+      document.getElementById("totalGoals").innerHTML = getTotal(gls);
+      document.getElementById("totalAssists").innerHTML = getTotal(ast);
+      document.getElementById("totalCleanSheets").innerHTML = getTotal(cs);
+
+    </script>
+  </body>
+  </head>
+</html>

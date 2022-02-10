@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Yeet">
+  <title>Valentina Santa Croce</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <body style="background-color: blue;">
+    <header>
+    <div>
+      <h1><a href="index.html">Brandeis FC</a></h1>
+    </div>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html"><h4><b>Home</b></h4></a></li>
+          <li><a href="about.html"><h4><b>About</b></h4></a></li>
+          <li><a href="firstTeam.html"><h4><b>First Team</b></h4></a></li>
+          <li><a href="coachingStaff.html"><h4><b>Coaching Staff</b></h4></a></li>
+          <li><a href="pastTeams.html"><h4><b>Past Teams</b></h4></a></li>
+        </ul>
+    </div>
+    </nav>
+    <div style="text-align: center">
+      <a href="coachingStaff.html"><h4><b>Back to Coaching Staff</b></h4></a>
+    </div>
+  </header>
+  <body style="flex: 1; flex-direction: column">
+    <div>
+      <h1 style="text-align: left"><b>Valentina Santa Croce</b></h1>
+      <img width="300" height="400"src="images/IMG_1903.jpg">
+      <ul style="display: inline-block">
+        <li style="list-style: none; color: white"> Birthdate: 8/24/1998</li>
+        <li style="list-style: none; color: white"> Age: 29</li>
+        <li style="list-style: none; color: white"> Year Joined: 2021 (7th Season)</li>
+        <li style="list-style: none; color: white"> Country: San Marino</li>
+      </ul>
+      <div>
+      <table style="width = 100%">
+        <tr>
+          <th>Games Managed</th>
+          <th>Wins</th>
+          <th>Draws</th>
+          <th>Losses</th>
+          <th>Goals Scored</th>
+          <th>Goals Conceded</th>
+          <th>Win Percentage</th>
+          <th>Goals per Game</th>
+          <th>Goals Conceded per Game</th>
+          <th>Goals Scored/Goals Conceded</th>
+        </tr>
+        <tr>
+          <td id = "gamesManaged"></td>
+          <td id = "gamesWon"></td>
+          <td id = "gamesTied"></td>
+          <td id = "gamesLost"></td>
+          <td id = "goalsScored"></td>
+          <td id = "goalsConceded"></td>
+          <td id = "winPercent"></td>
+          <td id = "goalsPerGame"></td>
+          <td id = "concededPerGame"></td>
+          <td id = "goalsScoredtoConceded"></td>
+        </tr>
+      </table>
+      </div>
+      <script>
+        const managed = 412;
+        const won = 311;
+        const draws = 43;
+        const lost = 58;
+        const scored = 1045;
+        const conceded = 399;
+
+        function toPercent(x){
+          x *= 100;
+          return x.toFixed(2);
+        }
+
+
+        document.getElementById("gamesManaged").innerHTML = managed;
+        document.getElementById("gamesWon").innerHTML = won;
+        document.getElementById("gamesTied").innerHTML = draws;
+        document.getElementById("gamesLost").innerHTML = lost;
+        document.getElementById("goalsScored").innerHTML = scored;
+        document.getElementById("goalsConceded").innerHTML = conceded;
+        document.getElementById("winPercent").innerHTML = toPercent(won/managed) + "%";
+        document.getElementById("goalsPerGame").innerHTML = (scored/managed).toFixed(2);
+        document.getElementById("concededPerGame").innerHTML = (conceded/managed).toFixed(2);
+        document.getElementById("goalsScoredtoConceded").innerHTML = (scored/conceded).toFixed(2);
+
+        </script>
+    </div>
+  </body>
+  </head>
+</html>
